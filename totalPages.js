@@ -5,6 +5,6 @@ function totalPages(arrayItems, rowsPerPage) {
   let page = (arrayItems.length)/rowsPerPage
   if(rowsPerPage == undefined || null) return 1
   else if(arrayItems == undefined || null) return undefined
-  else page == Infinity? 1 : Math.ceil(page)
+  else return page == Infinity? 1 : Math.ceil(page)
 }
 module.exports = totalPages
